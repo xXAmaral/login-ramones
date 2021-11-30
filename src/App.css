@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+.cortado{
+  text-decoration: line-through;
+}
+/*
+.valor{
+  color: #f00;
+  font-size: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+  margin-bottom: 15px;
+}
+*/
+.navbar-brand img{
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-top {
+  font-size: small !important;
+}
+
+.nav-item{
+  /*margin-left: 20px;
+  margin-right:20px;*/
+}
+
+.nav-link{
+  color: rgb(49, 49, 49) !important;
+  font-weight: 500;
+}
+.nav-link-cor2{
+  color: white !important;
+}
+
+.nav-link:hover{
+  color: rgb(255, 217, 0) !important;
+  font-weight: 500;
+}
+
+.pesquisa{
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  min-width: 300px;
+}
+
+.botao-pesquisa{
+  border: 1px solid #ced4da !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+  background-color: #fff;
+}
+
+@media (max-width: 767.98px) { 
+  .menu-mobile{
+    display: show;
+  }
+  .menu-desktop{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 768px) { 
+  .menu-mobile{
+    display:none;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+footer{
+  /*color: #fff;
+  padding: 30px 0;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 50px;
+  bottom: 0;*/
+}
+.listagem {
+  max-height: 200px;
+  max-width: 145px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listagem li {
+  padding-right: 10px !important;
+}
+
+/*BOX DE EXIBIÇÃO DOS PRODUTOS*/
+	/*TITULO*/
+	.tamanhoTituloProduto{
+		height: 50px;	
+		vertical-align: center;
+		overflow: hidden;
+		display: -webkit-box;
+	   		-webkit-line-clamp: 2; /* number of lines to show */
+	   		-webkit-box-orient: vertical;
+	}
+	/*BOTÃO DETALHES*/
+	.detalhes{
+		background-color: #ffa91f;
+		color: #fff;
+	}
+	.detalhes:hover{
+		background-color: #71b4e0;
+		color: #fff;
+	}
+	.tamanhoBotaoDetalhes{
+		height: 50px;
+	}
+	/*FIM BOTÃO DETALHES*/
+	/*VALORES*/
+	.valor{
+		font-size: 1.5em;
+		color: #00F;
+		font-weight: bold;
+		margin-top: 0px;
+	}
+	.de{
+		font-size: 1.2em;
+		color: #F00;
+		text-decoration: line-through;
+		margin-bottom: 0px;
+	}
+	.tamanhoPreco{
+		height: 80px;
+		position: center;
+	}
+	/*FIM VALORES*/
+
+	/*LOGIN */
+
+	.form-imput{
+        text-align: left;
+    }
+
+	label{
+		display: block;
+	}
+
+	input{
+		margin-bottom: 20px;
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	}
+
+	.footerLogin{
+        font-size: 17px;
+    }
+
+	.entrar{
+		background-color: #fff;
+		text-decoration: none;
+		display: inline;
+		color: #ffaf19;
+		padding: 8px 12px;
+		border: 1px solid #ffaf19;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.entrar:hover{
+		background-color: #ffaf19;
+		color: #fff;
+	}
+
+	.registrese{
+		background-color: #fff;
+		text-decoration: none;
+		display: inline;
+		color: #ffaf19;
+		padding: 8px 12px;
+		border: 1px solid #ffaf19;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.registrese:hover{
+		background-color: #ffaf19;
+		color: #fff;
+	}
+
+	.cadastrar{
+		background-color: #fff;
+		text-decoration: none;
+		display: inline;
+		color: #ffaf19;
+		padding: 8px 12px;
+		border: 1px solid #ffaf19;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	.cadastrar:hover{
+		background-color: #ffaf19;
+		color: #fff;
+	}
+
+	/*CADASTRAR*/
+
+	.Container{
+    max-width: 960px;
+    margin: 20px auto;
+    box-shadow: 0 0 1em #6c757d;
+}
+
+	.h1{
+    color: #3e3e3e;
+    font-size: 23px;
+}
+
+	.footerCadAnuncio{
+		max-width: 960px;
+		padding: 10px 30px 30px;
+		margin: 0px auto;
+		font-size: 18px;
+}
+
+	.cadAnuncio{
+		background-color: #fff;
+		color: #ffaf19;
+		padding: 8px 12px;
+		border: 1px solid #ffaf19;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 18px;
+}
+
+	.cadAnuncio:hover{
+		background-color: #ffaf19;
+		color: #fff;
 }

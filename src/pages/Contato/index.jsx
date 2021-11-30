@@ -1,4 +1,4 @@
-export const Sobre = () => {
+export const Contato = () => {
     return(
         <>
             <h1 className="text-center">Pesquisa sobre o SEO no React</h1>

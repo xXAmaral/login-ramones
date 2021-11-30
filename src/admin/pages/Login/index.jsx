@@ -1,17 +1,15 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import { BtnDefault } from "../../components/styled";
-import { AreaLogin } from './styled';
 
-export default () => {
+export const Login = () => {
     return(
         <BrowserRouter>
             <Switch>
                 <Route exact path="/registrar">
-                    <AreaLogin>
+                    
                         <h1>Crie sua conta</h1>
 
-                        <form>
+                        <form className="footerLogin">
                             <div className="form-imput">
                                 <label>Nome</label>
                                 <input type="user" />
@@ -21,16 +19,16 @@ export default () => {
                                 <input type="password" />
                             </div>
 
-                            <BtnDefault>Cadastrar!</BtnDefault>
+                            <Link to="*" className="cadastrar" type="button">Cadastrar!</Link>
 
                         </form>
-                    </AreaLogin>
+                    
                 </Route>
                 <Route exact path="*">
-                    <AreaLogin>
+                    
                         <h1>Faça login em sua conta</h1>
 
-                        <form>
+                        <form className="footerLogin">
                             <div className="form-imput">
                                 <label>Nome</label>
                                 <input type="user" />
@@ -40,14 +38,14 @@ export default () => {
                                 <input type="password" />
                             </div>
 
-                            <BtnDefault>Entrar</BtnDefault>
+                            <Link to="/home-admin" className="entrar" type="button">Entrar</Link>
 
-                            <div className="footerLogin">
+                            <div>
                                 Não tem uma conta?
-                                <Link to="/registrar">Registre-se</Link>
+                                <Link to="/registrar" className="registrese" tupe="button"> Registre-se </Link>
                             </div>
                         </form>
-                    </AreaLogin>
+                    
                 </Route>
             </Switch>
         </BrowserRouter>
